@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio MMWAVE_BEAM_CONTROL C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the MMWAVE_BEAM_CONTROL GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+

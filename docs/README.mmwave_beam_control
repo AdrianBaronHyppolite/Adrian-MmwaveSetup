@@ -1,0 +1,36 @@
+This is the mmwave_beam_control-write-a-block package meant as a guide to building GNU RAdio out-of-tree packages. To use the mmwave_beam_control blocks, the Python  namespaces is in 'mmwave_beam_control', which is imported as:
+
+    import mmwave_beam_control
+
+See the Doxygen documentation for details about the blocks available in this package. A quick listing of the details can be found in Python after importing by using:
+
+    help(mmwave_beam_control)
+
+
+### Getting Started
+
+## Dependencies
+
+* uhd-host
+* libuhd-dev
+* swig
+* cmake
+* gnuradio-dev
+
+## Installation
+
+```
+mkdir build;
+cd build;
+cmake ../
+make
+sudo make install
+sudo ldconfig
+```
+
+# Examples
+
+Example scripts located in the ```examples/``` directory.
+- Files starting  with: ```tx_slider``` allow the user to manually change the TX and RX beams through the GUI. 
+- Files starting  with: ```tx_sweeper``` automatically sweep through all TX beams, and optionally through all RX beams.
+- Files ending with: ```rx_waterfall``` have a waterfall plot that displays the received signal strenght. 
